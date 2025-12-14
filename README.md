@@ -7,4 +7,4 @@
 6. pipenv install "psycopg[binary,pool]"
 7. pipenv install pydantic-settings==2.7.0
 8. pipenv install greenlet==3.1.1
-
+9. test
