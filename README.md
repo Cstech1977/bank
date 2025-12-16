@@ -8,3 +8,10 @@
 7. pipenv install pydantic-settings==2.7.0
 8. pipenv install greenlet==3.1.1
 9. pipenv install loguru==0.7.3
+
+
+#### docker commands
+- docker network create <nextgen_local_nw>
+- docker compose -f <local.yml> config
+- docker compose -f <local.yml> up --build -d --remove-orphans
+- docker compose -f <local.yml> down -v
