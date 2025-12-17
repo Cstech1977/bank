@@ -15,3 +15,4 @@
 - docker compose -f <local.yml> config
 - docker compose -f <local.yml> up --build -d --remove-orphans
 - docker compose -f <local.yml> down -v
+- docker compose -f <local.yml> exec postgres psql -U <augusto> -d <nextgen>
