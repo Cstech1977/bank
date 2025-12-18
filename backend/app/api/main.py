@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from .routes.home import router
+from backend.app.api.routes import home
 
 
 api_router = APIRouter()
 
-api_router.include_router(router)
+api_router.include_router(home.router)
