@@ -8,6 +8,8 @@
 7. pipenv install pydantic-settings==2.7.0
 8. pipenv install greenlet==3.1.1
 9. pipenv install loguru==0.7.3
+10. pipenv install redis==5.0.3 celery==5.3.6 flower==2.0.1 redisbeat==1.2.6 jsonpickle==1.4.2
+11. pipenv install fastapi-mail==1.4.2 aiosmtplib==3.0.2 email-validator==2.2.0
 
 
 #### docker commands
