@@ -22,7 +22,8 @@ async def get_session() -> AsyncGenerator[AsyncSession, None]:
         try:
             yield session
         except Exception as e:
-            logger.error(f"An error occurred while getting the database session: {e}")
+            logger.error(
+                f"An error occurred while getting the database session: {e}")
             await session.rollback()
             raise
         finally:
