@@ -1,4 +1,4 @@
-### install packages
+### install packages (src)
 1. pipenv install "fastapi[standard]"
 2. pipenv install sqlmodel==0.0.22
 3. pipenv install alembic==1.14.0
@@ -12,9 +12,14 @@
 11. pipenv install fastapi-mail==1.4.2 aiosmtplib==3.0.2 email-validator==2.2.0
 
 
-#### docker commands
+#### docker commands (src)
 - docker network create <nextgen_local_nw>
 - docker compose -f <local.yml> config
 - docker compose -f <local.yml> up --build -d --remove-orphans
 - docker compose -f <local.yml> down -v
 - docker compose -f <local.yml> exec postgres psql -U <augusto> -d <nextgen>
+
+##### alembic commands (src)
+- alembic init -t async migrations
+- docker compose -f <local.yml> exec -it api alembic revision --autogenerate -m <"add_user_table">
+- docker compose -f <local.yml> exec -it api alembic upgrade head
